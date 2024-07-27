@@ -31,7 +31,7 @@ const Login = () => {
   const registerUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/signup`,
+        `https://mernproject-psi.vercel.app/api/signup`,
         currentUser
       );
       const { user, token } = response.data;
@@ -49,7 +49,7 @@ const Login = () => {
   const loginUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/login`,
+        `https://mernproject-psi.vercel.app/api/login`,
         currentUser
       );
       const { user, token } = response.data;
